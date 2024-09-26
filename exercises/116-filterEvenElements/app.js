@@ -1,6 +1,16 @@
 function filterEvenElements(arr) {
     // your code here
-    
+    if(arr.length === 0){
+        return 0;
+    }else{
+        var New = [];
+        for(let i = 0; i < arr.length; i++){
+            if(arr[i] % 2 === 0){
+                New.push(arr[i]);
+            }
+        }
+        return New; 
+    }
 }
 
 let output = filterEvenElements([2, 3, 4, 5, 6]);
